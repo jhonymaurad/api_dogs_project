@@ -9,4 +9,4 @@ in the website you can search by breed from a dropdown menu. The information and
 I also want to implement a post your own dog info to the website.
 
 ![API:] (https://thedogapi.com/).
-![Wireframe](./images/Wireframe-dogs.jpg)
+![Wireframe](./images/wireframe-dogs.jpg)
