@@ -1,14 +1,11 @@
 import axios from 'axios';
-import moment from 'moment';
-const address = 'https://api.thedogapi.com/v1/breeds/2';
+const addressAllBreeds = 'https://api.thedogapi.com/v1/breeds?&page=0';
 
-async function getDogData(){
+export default async function getDogData(){
   try {
-    const dogData = await axios.get(`${address}`);
-    return dogData;
-
+    const dogData = await axios.get(`${addressAllBreeds}`);
+    return dogData.data;
   } catch (error) {
     console.log(error);
   }
 }
-export default getDogData;
