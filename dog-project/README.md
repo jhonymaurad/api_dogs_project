@@ -21,7 +21,7 @@ Users can post pictures from their dogs along with some information to the websi
 
 ## Additional Libraries
 -This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
--![API:](https://thedogapi.com/).
+![API:](https://thedogapi.com/).
 -Axios.
 
 ## Issues and Resolutions
