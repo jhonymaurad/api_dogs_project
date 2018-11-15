@@ -26,8 +26,18 @@
   border-color: #4ba5e5;
 }
 .welcomePage{
-  margin: 5px 30px;
-  font-size: 20px;
+  margin: 5px 50px;
+  font-size: 25px;
+  background-image: url('./images/background.gif');
+  background-position: center;
+  background-size: contain;
+  color:#093b8c;
+}
+.breedInfo{
+  background-image: url("./images/background.gif");
+}
+.picturesGallery{
+  background-image: url('./images/background.png');
 }
 .logo{
   height: 200px;

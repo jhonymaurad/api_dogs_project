@@ -3,7 +3,7 @@ import Welcome from './components/Welcome';
 import './App.css';
 import Dropdown from './components/Dropdown';
 import NavBar from './components/NavBar';
-import RandomPic from './components/PostDog';
+import RandomPic from './components/RandomDog';
 
 class App extends Component {
   constructor(props){

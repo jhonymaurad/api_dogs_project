@@ -7,7 +7,7 @@ export default class Dropdown extends Component{
     super(props);
     this.state = {
       dogBreeds: [],
-      value: 1,
+      value: 1
     };
 this.handleChange = this.handleChange.bind(this);
 // this.handleSubmit = this.handleSubmit.bind(this);
@@ -38,24 +38,24 @@ handleChange(e){
   render(){
     return(
       <div>
-      <div >
-        <label >
-          Select a breed:
-          <select className='dropdownList' value={this.state.value} onChange={this.handleChange}>
-            {
-              this.state.dogBreeds.map(breed =>(
-                <option key={breed.id}
-                        value={breed.id}
+        <div >
+          <label >
+            Select a breed:
+            <select className='dropdownList' value={this.state.value} onChange={this.handleChange}>
+              {
+                this.state.dogBreeds.map(breed =>(
+                  <option key={breed.id}
+                          value={breed.id}
 
-                  >{breed.name}</option>
-              ))
-            }
-          </select>
-        </label>
-        {/* <input type='submit' value='submit'/> */}
-      </div>
+                    >{breed.name}</option>
+                ))
+              }
+            </select>
+          </label>
+          {/* <input type='submit' value='submit'/> */}
+        </div>
 
-      <BreedInfo breedid = {this.state.value} />
+        <BreedInfo breedid = {this.state.value} />
     </div>
     )
   }

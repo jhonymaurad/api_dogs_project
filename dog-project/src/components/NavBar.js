@@ -5,7 +5,7 @@ export default function NavBar(props){
     <nav>
       <button onClick={() => props.handleViewChange('welcome')}>HOME</button>
       <button onClick={() => props.handleViewChange('byBreeds')}>Search by Breed</button>
-      <button onClick={() => props.handleViewChange('postDog')}>Post</button>
+      <button onClick={() => props.handleViewChange('postDog')}>Images</button>
     </nav>
   )
 }
