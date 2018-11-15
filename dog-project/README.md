@@ -26,4 +26,14 @@ Users can post pictures from their dogs along with some information to the websi
 
 ## Issues and Resolutions
 
--Displaying the information for each breed after the user submits his/her choice
+-Issue: Displaying the information for each breed after the user submits his/her choice
+-Resolution: I had to pass each breed id as a prop to make a new axios request using the id
+
+```const data = await axios.get(`${BASE_URL}${this.props.breedid}`);
+```
+-Issue: Displaying an images
+-Resolution: Need to import the image
+
+```
+import dogPaw from '../images/dogPaw.png'
+```

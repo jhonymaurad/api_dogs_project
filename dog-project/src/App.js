@@ -3,7 +3,7 @@ import Welcome from './components/Welcome';
 import './App.css';
 import Dropdown from './components/Dropdown';
 import NavBar from './components/NavBar';
-import PostDog from './components/PostDog';
+import RandomPic from './components/PostDog';
 
 class App extends Component {
   constructor(props){
@@ -21,7 +21,7 @@ class App extends Component {
     case 'byBreeds': return <Dropdown/>
     break;
 
-    case 'postDog': return <PostDog/>
+    case 'postDog': return <RandomPic/>
     break;
 
     default:
@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar handleViewChange={this.setView}/>
-        {this.getView()}      
+        {this.getView()}
       </div>
     );
   }

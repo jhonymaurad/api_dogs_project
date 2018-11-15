@@ -1,8 +1,9 @@
 import React from 'react';
-
+import dogPaw from '../images/dogPaw.png'
 export default function Welcome(props){
   return(
-    <div>
+    <div className='welcomePage'>
+      <img src={dogPaw} className= 'logo'/>
       <h1>FIND A FRIEND</h1>
       <h2>Dog Breed Selector</h2>
     <p>Choosing a dog can be exciting and nerve-wracking at the same
