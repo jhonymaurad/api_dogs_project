@@ -10,7 +10,6 @@ export default class Dropdown extends Component{
       value: 1
     };
 this.handleChange = this.handleChange.bind(this);
-// this.handleSubmit = this.handleSubmit.bind(this);
   }
 
 async componentDidMount(){
@@ -27,13 +26,6 @@ handleChange(e){
       value: e.target.value,
     });
 }
-//
-// handleSubmit(e){
-//   e.preventDefault();
-//   //getBreedInfo
-//   alert("youu choice of breed is: "+ this.state.value)
-// }
-
 
   render(){
     return(
@@ -46,13 +38,11 @@ handleChange(e){
                 this.state.dogBreeds.map(breed =>(
                   <option key={breed.id}
                           value={breed.id}
-
                     >{breed.name}</option>
                 ))
               }
             </select>
           </label>
-          {/* <input type='submit' value='submit'/> */}
         </div>
 
         <BreedInfo breedid = {this.state.value} />

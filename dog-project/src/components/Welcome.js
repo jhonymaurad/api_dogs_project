@@ -19,6 +19,5 @@ export default function Welcome(props){
        of dog for you.
      </p>
     </div>
-
   )
 }

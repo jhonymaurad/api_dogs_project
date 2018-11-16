@@ -40,7 +40,6 @@ async componentDidMount(){
   async componentDidUpdate(prevProps){
     if(this.props.breedid !== prevProps.breedid){
       const data = await axios.get(`${BASE_URL}${this.props.breedid}`);
-
       this.setState(
         {
           name: data.data[0].breeds[0].name,

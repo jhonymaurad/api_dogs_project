@@ -25,15 +25,13 @@ async componentDidMount(){
         picsUrl: urls
       }
     )
-
-  } catch (e) {
+  }catch (e) {
     console.log(e);
   }
 }
 
 async componentDidUpdate(prevProps, prevState){
   if(this.state.value !== prevState.value){
-
     const allBreedsData = await axios.get(`${BASE_URL_ALL}`);
     const urls = await RandomPics(this.state.value);
     this.setState(
@@ -41,8 +39,7 @@ async componentDidUpdate(prevProps, prevState){
         allBreeds : allBreedsData.data.message,
         picsUrl : urls
       }
-    )
-  }
+    )}
 }
 
 handleChange(e){
@@ -54,7 +51,6 @@ render(){
   const allBreedsArr = Object.keys(this.state.allBreeds);
   return(
     <div>
-
       <div>
         <label>
           Display images for which breed:
