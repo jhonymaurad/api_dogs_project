@@ -11,6 +11,8 @@ class BreedInfo extends Component {
       breed_group: "",
       life_span: "",
       bred_for: "",
+      weight:'',
+      height:'',
       url: ''
     }
   }
@@ -25,6 +27,8 @@ async componentDidMount(){
           breed_group: data.data[0].breeds[0].breed_group,
           life_span: data.data[0].breeds[0].life_span,
           bred_for: data.data[0].breeds[0].bred_for,
+          weight: data.data[0].breeds[0].weight.imperial,
+          height: data.data[0].breeds[0].height.imperial,
           url: data.data[0].url
         }
       )
@@ -44,6 +48,8 @@ async componentDidMount(){
           breed_group: data.data[0].breeds[0].breed_group,
           life_span: data.data[0].breeds[0].life_span,
           bred_for: data.data[0].breeds[0].bred_for,
+          weight: data.data[0].breeds[0].weight.imperial,
+          height: data.data[0].breeds[0].height.imperial,
           url: data.data[0].url
         })
       }
@@ -53,11 +59,20 @@ async componentDidMount(){
     return(
       <div className='breedInfo'>
         <h2>Name: {this.state.name}</h2>
-        <img src= {this.state.url} style={{width:600}}/>
-        <h3>{this.state.temperament}</h3>
-        <h2>Breed Group: {this.state.breed_group}</h2>
-        <h3>Originally Bred For: {this.state.bred_for}</h3>
-        <h2>Life Span:{this.state.life_span}</h2>
+
+        <div className= 'container'>
+          <img src= {this.state.url} style={{width:600}} className= 'imageBreed'/>
+          <div className= 'overlay'>
+            <div className= 'text'>
+              <h3>{this.state.temperament}</h3>
+              <h2>Breed Group: {this.state.breed_group}</h2>
+              <h3>Originally Bred For: {this.state.bred_for}</h3>
+              <h2>Life Span:{this.state.life_span}</h2>
+              <h2>weight: {this.state.weight}</h2>
+              <h2>height: {this.state.height}</h2>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

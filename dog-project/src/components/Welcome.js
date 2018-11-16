@@ -15,8 +15,7 @@ export default function Welcome(props){
     <p> The first step to being a responsible dog owner begins before
        you even bring home a dog. Thoughtfully and seriously assess
        your needs before making a decision, and you'll live long,
-       happy lives together. Using our Dog Breed Selector, just
-       answer a series of questions, and we'll find the right breed
+       happy lives together. Find a Friend will help you find the right breed
        of dog for you.
      </p>
     </div>

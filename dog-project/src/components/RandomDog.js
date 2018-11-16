@@ -54,6 +54,7 @@ render(){
   const allBreedsArr = Object.keys(this.state.allBreeds);
   return(
     <div>
+
       <div>
         <label>
           Display images for which breed:
