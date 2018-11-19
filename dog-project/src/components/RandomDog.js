@@ -10,7 +10,7 @@ class RandomPic extends Component{
     this.state={
       allBreeds: [],
       picsUrl:[],
-      value:"affenpinscher"
+      value:"chow"
     }
     this.handleChange = this.handleChange.bind(this);
   }

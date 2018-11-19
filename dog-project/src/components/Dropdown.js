@@ -7,7 +7,7 @@ export default class Dropdown extends Component{
     super(props);
     this.state = {
       dogBreeds: [],
-      value: 1
+      value: 12
     };
 this.handleChange = this.handleChange.bind(this);
   }
